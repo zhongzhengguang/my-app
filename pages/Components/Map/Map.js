@@ -1,17 +1,12 @@
 import React, { useContext, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+
 import Link from "next/link";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import YilanForecast from "../Forecast/YilanForcast";
 import JinshanForecast from "../Forecast/JishanForcast";
 import JinzunForecast from "../Forecast/JinzunForecast";
-
-const makericon = new L.Icon({
-  iconUrl:
-    "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png",
-  iconSize: [25, 40],
-});
 
 const Map = () => {
   const surfpoints = [
@@ -66,7 +61,7 @@ const Map = () => {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           {surfpoints.map((item) => (
-            <Marker position={item.position} key={item.id} icon={makericon}>
+            <Marker position={item.position} key={item.id}>
               <Popup>
                 <button>{item.name}</button>
               </Popup>
