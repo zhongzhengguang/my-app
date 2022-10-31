@@ -3,8 +3,7 @@ import { React } from "react";
 import background from "../public/Assets/surf.mp4";
 import Navbar from "./Components/Navbar/Navbar";
 import SearchLocation from "./Components/Forecast/SearchLocation";
-import dynamic from "next/dynamic";
-const Map = dynamic(() => import("./Components/Map/Map"), { ssr: false });
+
 const forecast = () => {
   return (
     <div>
@@ -16,7 +15,6 @@ const forecast = () => {
         muted
       />
       <Navbar />
-
       <SearchLocation />
     </div>
   );

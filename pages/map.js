@@ -8,7 +8,6 @@ const map = () => {
   return (
     <div>
       <Navbar />
-
       <Map />
     </div>
   );
