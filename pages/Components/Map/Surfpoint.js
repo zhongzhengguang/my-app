@@ -44,13 +44,11 @@ const Surfpoint = () => {
       mapStyle="mapbox://styles/zhongzhengguang/cl9wy5dyz000d14qqxmm85712"
       mapboxAccessToken={MAPBOX_TOKEN}
     >
-      {Surfpoints.map((item) => (
-        <Marker
-          latitude={item.latitude}
-          longitude={item.longitude}
-          color="red"
-        />
-      ))}
+      <Marker
+        latitude={25.058452802073912}
+        longitude={121.56717401111011}
+        color="red"
+      />
     </Map>
   );
 };
