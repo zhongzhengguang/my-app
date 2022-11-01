@@ -40,18 +40,17 @@ const JinshanForecast = () => {
         alert(error);
       });
   }, []);
-  console.log(data);
 
   return (
     <div className=" mt-10">
       <ul className="flex flex-col justify-center w-[500px] m-auto ">
-        <li className=" text-4xl p-4">{data.locationName}</li>
-        <li className=" p-2">{weatherElementTime.startTime}</li>
-        <li className=" p-2">{weatherElementTime.endTime}</li>
-        <li className=" p-2">{waveHieght.parameterName}</li>
-        <li className=" p-2">{waveType.parameterName}</li>
-        <li className=" p-2">{windDir.parameterName}</li>
-        <li className=" p-2">{windSpeed.parameterName}</li>
+        <li className=" text-4xl p-4 w-[50%]">{data.locationName}</li>
+        <li className=" p-2 w-[50%]">{weatherElementTime.startTime}</li>
+        <li className=" p-2 w-[50%]">{weatherElementTime.endTime}</li>
+        <li className=" p-2 w-[50%]">{waveHieght.parameterName}</li>
+        <li className=" p-2 w-[50%]">{waveType.parameterName}</li>
+        <li className=" p-2 w-[50%]">{windDir.parameterName}</li>
+        <li className=" p-2 w-[50%]">{windSpeed.parameterName}</li>
       </ul>
     </div>
   );
