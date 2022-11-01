@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import Map, { Marker, Popup } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { MapboxPopup } from "react-map-gl/dist/esm/types";
+
 const MAPBOX_TOKEN =
   "pk.eyJ1Ijoiemhvbmd6aGVuZ2d1YW5nIiwiYSI6ImNsOXd4d29sYjA1OXozbnBhNnI1bm9xcnkifQ.ijReFc9-sxVsHcbzagb-0w";
 
@@ -40,7 +40,7 @@ let Surfpoints = [
 
 const Surfpoint = () => {
   const [showPopup, setShowPopup] = useState();
-  console.log(showPopup.longitude);
+  console.log(showPopup);
   return (
     <Map
       initialViewState={{
