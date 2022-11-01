@@ -46,6 +46,7 @@ const Surfpoint = () => {
     >
       {Surfpoints.map((item) => (
         <Marker
+          key={item.id}
           latitude={item.latitude}
           longitude={item.longitude}
           color="red"
