@@ -1,12 +1,13 @@
 import React from "react";
-import Map1 from "./Components/Map/Map";
+import Surfpoint from "./Components/Map/Surfpoint";
+
 import Navbar from "./Components/Navbar/Navbar";
 
 const map = () => {
   return (
     <div>
       <Navbar />
-      <Map1 />
+      <Surfpoint />
     </div>
   );
 };
