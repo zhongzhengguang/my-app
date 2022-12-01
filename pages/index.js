@@ -34,7 +34,7 @@ export default function Home() {
               ease-in 
               duration-75"
               >
-                Get stated
+                Get started
               </button>
             </Link>
             <Link href="/forecast">
